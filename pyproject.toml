@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "chadbarteldotcom"
-version = "0.3.0"
+version = "0.4.0"
 description = "Repository for Chad Bartel's personal, static website hosted on S3."
 authors = ["chadbartel <10793854+chadbartel@users.noreply.github.com>"]
 license = "Creative Commons Zero v1.0 Universal"
