@@ -68,7 +68,7 @@ class MyStaticSiteStack(Stack):
         cloudfront_oac = constructs.MyCloudFrontOAC(
             self,
             "my-cloudfront-oac",
-            name="MyCloudFrontOAC",
+            name="MyNewCloudFrontOAC",
             description=f"CloudFront OAC for {enums.MyDomainName.domain_name.value}",
         )
 
