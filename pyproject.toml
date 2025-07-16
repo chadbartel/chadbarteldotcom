@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "chadbarteldotcom"
+version = "0.4.0"
+description = "Repository for Chad Bartel's personal, static website hosted on S3."
+authors = ["chadbartel <10793854+chadbartel@users.noreply.github.com>"]
+license = "Creative Commons Zero v1.0 Universal"
+readme = "README.md"
+packages = [
+    { include = "cdk" }
+]
+
+[tool.poetry.dependencies]
+python = "~3.12"
+aws-cdk-lib = "^2.205.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+pytest = "^7.4.4"
+coverage = "^7.9.2"
+pytest-cov = "^4.1.0"
+pylint = "^2.17.7"
+poethepoet = "^0.21.1"
+python-dotenv = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+py_version = 312
+line_length = 79
+wrap_length = 0
+multi_line_output = 3
+use_parentheses = true
+combine_as_imports = true
+include_trailing_comma = true
+group_by_package = true
+atomic = true
+length_sort = true
+import_heading_future = "Future"
+import_heading_stdlib = "Standard Library"
+import_heading_thirdparty = "Third Party"
+import_heading_firstparty = "My Libraries"
+import_heading_localfolder = "Local Modules"
+
+[tool.black]
+line-length = 79
+target-version = ['py312']
