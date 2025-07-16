@@ -22,7 +22,7 @@ from cdk.stacks import MyStaticSiteStack
 app = App()
 
 # Initialize stack
-stack_name = "my-static-website-stack"
+stack_name = "my-new-static-website-stack"
 MyStaticSiteStack(app, stack_name, stack_name=stack_name)
 
 # Synthesize application stack
